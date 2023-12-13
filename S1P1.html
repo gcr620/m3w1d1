@@ -31,7 +31,57 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
 
 <head>
     <style>
-
+        /* 1 */
+        div.jumbotron div.px-0 h1{
+            color: red;
+        }
+        /* 2 */
+        nav.nav > span{
+            border-style: solid;
+            border-width: 1px;
+        }
+        /* 3 */
+        p.lead a{
+            text-decoration: underline;
+        }
+        /* 4 */
+        div.blog-post:first-of-type{
+            border-style: solid;
+            border-width: 1px;
+        }
+        /* 5 */
+        /* non ci sono <hr> nel codice ma presumo si debba scrivere così*/
+        div.blog-post:first-of-type hr{
+            color: red;
+        }
+        /* 6 */
+        nav.nav span:nth-of-type(even){
+            background-color: red;
+        }
+        /* 7 */
+        div.blog-post:first-of-type ol > li{
+            text-decoration: underline;
+        }
+        /* 8 */
+        div.blog-post:nth-of-type(2) p.blog-post-meta a{
+            text-decoration: underline;
+        }
+        /* 9 */
+        div.blog-post:nth-of-type(3) ul li:nth-child(2){
+            text-decoration: underline;
+        }
+        /* 10 */
+        a.float-right[href="#"]{
+            color: red;
+        }
+        /* 11 */
+        div.blog-main nav.blog-pagination a.disabled{
+            color: red;
+        }
+        /* 12 */
+        footer.blog-footer p a:nth-child(2){
+            color: red;
+        }
     </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
